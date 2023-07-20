@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: '下划线',
+    title: '探报',
     htmlAttrs: {
       lang: 'en'
     },

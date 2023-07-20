@@ -1,6 +1,47 @@
-# underline
+# LinkBlog
 
-## Build Setup
+收录和展示你喜欢的内容链接
+
+## 使用
+
+## 发布链接
+
+你可以在 `data` 目录下的`linkcard-{$date}.json`文件中写下你要展示的内容链接
+
+`{$date}` 是内容链接要展示出来的时间，比如`linkcard-21230601.json`只会在2123年6月1号开始展示出来
+
+因此你可以提前把你准备好的内容链接全部放在 data 文件夹下，通过设置 {$date} 来实现要在哪一天开始可见，而不用发布时才填写 `json` 文件
+
+## `linkcard-{$date}.json`
+```json
+[
+  {
+    "content_title": "linkblog 收录和展示优质内容的链接",
+    "content_url": "https://github.com/kaiqiangzhao/linkblog",
+    "content_description": "很多的 newsletter 都是推荐自己阅读的内容，你可以通过 linkblog 来收录和展示你喜欢的优质内容链接",
+    "published_date": "2023-07-10",
+    "user_nickname": "linkblog",
+    "user_url": "https://github.com/kaiqiangzhao"
+  }
+]
+```
+content_title: 内容标题
+
+content_url: 内容链接
+
+content_description: 内容描述
+
+published_date: 内容发布时间
+
+user_nickname: 用户昵称
+
+user_url: 点击昵称跳转的链接
+
+## 推荐
+
+你也可以使用调查问卷接收用户的推荐
+
+## 构建
 
 ```bash
 # install dependencies
@@ -17,53 +58,6 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+## 技术栈
 
-## Special Directories
-
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
-
-### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+nuxt.js + tailwind css
