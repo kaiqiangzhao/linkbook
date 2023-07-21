@@ -7,7 +7,7 @@
       <div class="py-5">
         <p class="text-xl font-semibold mb-5">LinkBlog 是什么?</p>
         <div class="text-base text-gray-600">
-          <p>探报，是一个收集和展示互联网优质内容的网站 ...</p>
+          <p>LinkBlog，是一个收集和展示互联网优质内容的网站 ...</p>
         </div>
       </div>
     </div>
