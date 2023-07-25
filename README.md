@@ -1,4 +1,4 @@
-# LinkBlog
+# LinkBook
 
 收录和展示你喜欢的内容链接
 
@@ -16,11 +16,11 @@
 ```json
 [
   {
-    "content_title": "linkblog 收录和展示优质内容的链接",
-    "content_url": "https://github.com/kaiqiangzhao/linkblog",
-    "content_description": "很多的 newsletter 都是推荐自己阅读的内容，你可以通过 linkblog 来收录和展示你喜欢的优质内容链接",
+    "content_title": "linkbook 收录和展示优质内容的链接",
+    "content_url": "https://github.com/kaiqiangzhao/linkbook",
+    "content_description": "很多的 newsletter 都是推荐自己阅读的内容，你可以通过 linkbook 来收录和展示你喜欢的优质内容链接",
     "published_date": "2023-07-10",
-    "user_nickname": "linkblog",
+    "user_nickname": "linkbook",
     "user_url": "https://github.com/kaiqiangzhao"
   }
 ]

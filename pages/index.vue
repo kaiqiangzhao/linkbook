@@ -4,7 +4,7 @@
       <div class="flex justify-between m-5 items-center">
         <div class="text-2xl  font-semibold flex justify-left items-center text-blue-600">
           <img class="w-7 mr-2" :src="require('static/logo.png')" alt="My Image">
-          <p class="">LinkBlog</p>
+          <p class="">LinkBook</p>
         </div>
         <div class="text-base text-gray-500 font-semibold">
           <nuxt-link to="/about" class="hover:text-gray-800">关于</nuxt-link>
