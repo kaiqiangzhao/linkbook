@@ -1,24 +1,31 @@
 <template>
   <div class="w-full text-left">
-    <a class="text-xl font-semibold hover:underline hover:underline-offset-4 hover:text-blue-600"
-       :href="linkcard.content_url">
-      {{ linkcard.content_title }}
-    </a>
-    <p class="text-base text-gray-500 mt-5">
-      {{ linkcard.content_description }}
-    </p>
-    <div class="flex justify-between items-center mt-5">
-      <div class="text-sm text-gray-500">
-        <span class="mr-2" v-if="published_year">{{published_year + '年'}}</span>
-        <span v-if="content_url_hostname">{{content_url_hostname}}</span>
-      </div>
-      <div class="text-sm">
-        <span class="text-gray-500">推荐者:</span>
-        <a
-          class="text-gray-500 underline underline-offset-2 hover:text-gray-800 hover:text-blue-600"
-          :href="linkcard.user_url">
-          {{ linkcard.user_nickname }}
+    <div class="text-sm text-gray-400 mb-1">
+      <span v-if="content_published_year">{{content_published_year + '年 · '}}</span>
+      <span v-if="content_url_hostname">{{content_url_hostname}}</span>
+    </div>
+    <div class="flex">
+      <div class="mr-5">
+        <a class="text-xl font-semibold hover:underline hover:underline-offset-4"
+           :href="linkcard.content.url">
+          {{ linkcard.content.title }}
         </a>
+        <p class="text-base text-gray-500 mt-5 line-clamp-3">
+          {{ linkcard.content.description }}
+        </p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center mt-5 text-gray-400 text-sm">
+      <div>
+        <span>推荐者: </span>
+        <a
+          class="hover:underline hover:underline-offset-2 hover:text-black"
+          :href="linkcard.user.url">
+          {{ linkcard.user.nickname }}
+        </a>
+      </div>
+      <div>
+        <span v-if="linkcard.published_date">{{linkcard.published_date}}</span>
       </div>
     </div>
   </div>
@@ -30,26 +37,31 @@ export default {
   name: 'LinkCard',
   props: {
     linkcard: {
-      content_title: "",
-      content_url: "",
-      content_description: "",
+      content:{
+        title: "",
+        url: "",
+        description: "",
+        published_date: "",
+      },
+      user: {
+        nickname: "",
+        url: "",
+      },
       published_date: "",
-      user_nickname: "",
-      user_url: "",
     },
   },
-  data(){
+  data() {
     return {
       content_url_hostname: "",
-      published_year: "",
+      content_published_year: "",
     }
   },
   mounted: function () {
-    let hostname = new URL(this.linkcard.content_url).hostname
+    let hostname = new URL(this.linkcard.content.url).hostname
     this.content_url_hostname = hostname.startsWith("www.") ? hostname.slice(4) : hostname
-    let year = new Date(this.linkcard.published_date).getFullYear()
+    let year = new Date(this.linkcard.content.published_date).getFullYear()
     if(year){
-      this.published_year = year.toString()
+      this.content_published_year = year.toString()
     }
   }
 }

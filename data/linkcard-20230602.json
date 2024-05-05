@@ -1,18 +1,14 @@
 [
   {
-    "content_title": "linkbook 收录和展示优质内容的链接",
-    "content_url": "https://github.com/kaiqiangzhao/linkbook",
-    "content_description": "很多的 newsletter 都是推荐自己阅读的内容，你可以通过 linkbook 来收录和展示你喜欢的优质内容链接",
-    "published_date": "2023-07-10",
-    "user_nickname": "linkbook",
-    "user_url": "https://github.com/kaiqiangzhao"
-  },
-  {
-    "content_title": "linkbook 收录和展示优质内容的链接",
-    "content_url": "https://github.com/kaiqiangzhao/linkbook",
-    "content_description": "很多的 newsletter 都是推荐自己阅读的内容，你可以通过 linkbook 来收录和展示你喜欢的优质内容链接",
-    "published_date": "2023-07-17",
-    "user_nickname": "linkbook",
-    "user_url": "https://github.com/kaiqiangzhao"
+    "content": {
+      "title": "一边旅行一边工作，当数字游民有多爽",
+      "url": "https://www.xiaoyuzhoufm.com/episode/62fa446feb0492cf2f508837",
+      "description": "这一期 oh!my ga 要来谈一个现在很热门的生活和工作方式 - “数字游民”（Digital Nomad），他们无需固定工作地点，可以边旅游边玩边工作...",
+      "published_date": "2022-08-15"
+    },
+    "user": {
+      "nickname": "linkbook",
+      "url": "https://github.com/kaiqiangzhao"
+    }
   }
 ]

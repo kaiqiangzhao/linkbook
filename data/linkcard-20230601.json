@@ -1,18 +1,14 @@
 [
   {
-    "content_title": "linkbook 收录和展示优质内容的链接",
-    "content_url": "https://github.com/kaiqiangzhao/linkbook",
-    "content_description": "很多的 newsletter 都是推荐自己阅读的内容，你可以通过 linkbook 来收录和展示你喜欢的优质内容链接",
-    "published_date": "2023-07-10",
-    "user_nickname": "linkbook",
-    "user_url": "https://github.com/kaiqiangzhao"
-  },
-  {
-    "content_title": "linkbook 收录和展示优质内容的链接",
-    "content_url": "https://github.com/kaiqiangzhao/linkbook",
-    "content_description": "很多的 newsletter 都是推荐自己阅读的内容，你可以通过 linkbook 来收录和展示你喜欢的优质内容链接",
-    "published_date": "2023-07-17",
-    "user_nickname": "linkbook",
-    "user_url": "https://github.com/kaiqiangzhao"
+    "content": {
+      "title": "AI 虚拟人乔布斯和苏格拉底谈大学的意义",
+      "url": "https://www.bilibili.com/video/BV1bN411U72D",
+      "description": "视频开头，主持人约翰列侬说：\"欢迎回到《苏格拉底帮你怀疑人生系列》, 本节目旨在使用大量反问句，让你变得心烦意乱...\"",
+      "published_date": "2023-07-10"
+    },
+    "user": {
+      "nickname": "linkbook",
+      "url": "https://github.com/kaiqiangzhao"
+    }
   }
 ]

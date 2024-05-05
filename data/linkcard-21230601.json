@@ -1,18 +1,15 @@
 [
   {
-    "content_title": "linkbook 收录和展示优质内容的链接",
-    "content_url": "https://github.com/kaiqiangzhao/linkbook",
-    "content_description": "很多的 newsletter 都是推荐自己阅读的内容，你可以通过 linkbook 来收录和展示你喜欢的优质内容链接",
-    "published_date": "2023-07-10",
-    "user_nickname": "linkbook",
-    "user_url": "https://github.com/kaiqiangzhao"
-  },
-  {
-    "content_title": "linkbook 收录和展示优质内容的链接",
-    "content_url": "https://github.com/kaiqiangzhao/linkbook",
-    "content_description": "很多的 newsletter 都是推荐自己阅读的内容，你可以通过 linkbook 来收录和展示你喜欢的优质内容链接",
-    "published_date": "2023-07-17",
-    "user_nickname": "linkbook",
-    "user_url": "https://github.com/kaiqiangzhao"
+    "content": {
+      "title": "Paul Graham 两万字新文：如何取得杰出成就",
+      "url": "https://mp.weixin.qq.com/s/THbbdPVnR9mj5LaLuW160w",
+      "description": "如果我们收集在不同领域成就伟大事业的技巧列表，它们的交集会是什么呢？我决定通过实践来找出答案...",
+      "published_date": "2023-07-01"
+    },
+    "user": {
+      "nickname": "linkbook",
+      "url": "https://github.com/kaiqiangzhao"
+    }
   }
 ]
+
